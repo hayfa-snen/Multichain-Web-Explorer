@@ -1,4 +1,4 @@
-# Multichain Web Explorer
+# MultiChain Web Explorer
 MultiChain Web Explorer is a simple web interface for MultiChain blockchains. The web application uses PHP to provide a web front-end for a MultiChain blockchain node. It currently supports the following features: 
 
 • Viewing the node's overall status.
