@@ -1,0 +1,36 @@
+application: multichain-webexplorer
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /php.ini
+  static_files: php.ini
+  upload: /php.ini
+
+- url: /include/config.txt
+  static_files: include/config.txt
+  upload: /include/config.txt
+
+- url: /img
+  static_dir: img
+  
+- url: /css
+  static_dir: css
+  
+- url: /pages/page-*.php
+  script: pages/page-*.php
+  
+- url: /include/*.php
+  script: include/*.php
+
+- url: /download-file
+  script: include/download-file.php
+  
+- url: ./*
+  script: index.php
